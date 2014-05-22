@@ -1,9 +1,9 @@
 == README
 
+
 Help , Config and constructor located at
 
     http://localhost:3000/help/index
-
 
 
 ===Agreements
@@ -14,15 +14,15 @@ Modbus device is anywhere. Suppose 192.168.1.1:502
 
 Request design:
 
-Template:
+Template: 
 
     http://localhost:3000/{reg type}/{var type}/{reg addr(int)})/{value(write)}/{ip}/{port}/{slave id}
 
-Example read:
+Example read: 
 
     http://localhost:3000/discrete_inputs/int/21/192_168_1_1/502/1
 
-Example write:
+Example write: 
 
     http://localhost:3000/coil/int/22/1/192_168_1_1/502/1
 
