@@ -1,4 +1,10 @@
-==README
+== README
+
+
+Help , Config and constructor located at
+
+    http://localhost:3000/help/index
+
 
 ===Agreements
 
@@ -8,11 +14,17 @@ Modbus device is anywhere. Suppose 192.168.1.1:502
 
 Request design:
 
-Template: http://localhost:3000/{reg type}/{var type}/{reg addr(int)})/{value(write)}/{ip}/{port}/{slave id} 
+Template: 
 
-Example read: http://localhost:3000/discrete_inputs/int/21/192_168_1_1/502/1  
+    http://localhost:3000/{reg type}/{var type}/{reg addr(int)})/{value(write)}/{ip}/{port}/{slave id}
 
-Example write: http://localhost:3000/coil/int/22/1/192_168_1_1/502/1 
+Example read: 
+
+    http://localhost:3000/discrete_inputs/int/21/192_168_1_1/502/1
+
+Example write: 
+
+    http://localhost:3000/coil/int/22/1/192_168_1_1/502/1
 
 Writing data from their reading differs presence parameter {val}
 
@@ -22,75 +34,75 @@ If value contains(float) . value writes with _ instead . too
 
 Example:
 
-http://localhost:3000/multiple_registers/float/7,8/33_5/192_168_1_1/502/1
+    http://localhost:3000/multiple_registers/float/7,8/33_5/192_168_1_1/502/1
 
 ===Coil
 
 Template:
 
-http://localhost:3000/coil/int/address/ip/port/slave id
+    http://localhost:3000/coil/int/address/ip/port/slave id
 
 Example:
 
-http://localhost:3000/coil/int/22/192_168_1_1/502/1
+    http://localhost:3000/coil/int/22/192_168_1_1/502/1
 
 ===Discrete inputs
 
 Template:
 
-http://localhost:3000/discrete_inputs/int/address/ip/port/slave id
+    http://localhost:3000/discrete_inputs/int/address/ip/port/slave id
 
 Example:
 
-http://localhost:3000/discrete_inputs/int/21,22/192_168_1_1/502/1
+    http://localhost:3000/discrete_inputs/int/21,22/192_168_1_1/502/1
 
 ===Holding registers
 
 Template:
 
-http://localhost:3000/holding_registers/int/address/ip/port/slave id
+    http://localhost:3000/holding_registers/int/address/ip/port/slave id
 
 Example:
 
-http://localhost:3000/holding_registers/int/22/192_168_1_1/502/1
+    http://localhost:3000/holding_registers/int/22/192_168_1_1/502/1
 
 ===Input registers
 
 Template:
 
-http://localhost:3000/input_registers/float/address/ip/port/slave id
+    http://localhost:3000/input_registers/float/address/ip/port/slave id
 
 Example:
 
-http://localhost:3000/input_registers/float/7,8/192_168_1_1/502/1
+    http://localhost:3000/input_registers/float/7,8/192_168_1_1/502/1
 
 
 ===Coil
 
 Template:
 
-http://localhost:3000/coil/int/address/value/ip/port/slave id
+    http://localhost:3000/coil/int/address/value/ip/port/slave id
 Example:
-http://localhost:3000/coil/int/22/0/192_168_1_1/502/1
+    http://localhost:3000/coil/int/22/0/192_168_1_1/502/1
 
 ===Discrete input
 
 Template:
-http://localhost:3000/discrete_input/int/address/value/ip/port/slave id
+    http://localhost:3000/discrete_input/int/address/value/ip/port/slave id
 Example:
-http://localhost:3000/discrete_input/int/22/0/192_168_1_1/502/1
+    http://localhost:3000/discrete_input/int/22/0/192_168_1_1/502/1
 
 ===Holding registers
 
 Template:
-http://localhost:3000/holding_register/int/address/value/ip/port/slave id
+    http://localhost:3000/holding_register/int/address/value/ip/port/slave id
 Example:
-http://localhost:3000/holding_register/int/22/1/192_168_1_1/502/1
+    http://localhost:3000/holding_register/int/22/1/192_168_1_1/502/1
 
 ===Input registers
 
 Template:
-http://localhost:3000/input_registers/float/address/value/ip/port/slave id
+    http://localhost:3000/input_registers/float/address/value/ip/port/slave id
 Example:
-http://localhost:3000/input_registers/float/7,8/35_5/192_168_1_1/502/1
+    http://localhost:3000/input_registers/float/7,8/35_5/192_168_1_1/502/1
 
