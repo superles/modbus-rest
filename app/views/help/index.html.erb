@@ -1,0 +1,22 @@
+<h1>Agreements</h1>
+<ol >
+  <li>Your server located at <code>localhost:3000</code></li>
+  <li>Modbus device is anywhere. Suppose <code>192.168.1.1:502</code></li>
+  <li>Request design:
+  <ul>
+    <li> Template:<code style="white-space: nowrap"> http://localhost:3000/{reg type}/{var type}/{reg addr(int)})/{value(write)}/{ip}/{port}/{slave id}</code></li>
+    <li>Example read: <code>http://localhost:3000/discrete_inputs/int/21/192_168_1_1/502/1</code></li>
+    <li>Example write: <code>http://localhost:3000/coil/int/22/1/192_168_1_1/502/1</code></li>
+    </ul>
+  </li>
+  <li>Writing data from their reading differs presence parameter <code>{val}</code></li>
+  <li>IP address with <code>_</code> instead <code>.</code></li>
+  <li>If value contains(float) <code>.</code> value writes with <code>_</code> instead <code>.</code> too</li>
+  <ul><li>
+  <dl>
+    <dt>Example:</dt>
+    <dd>http://localhost:3000/multiple_registers/float/7,8/33_5/192_168_1_1/502/1</dd>
+  </dl>
+  </li></ul>
+</ol>
+   <p class="lead"></p>

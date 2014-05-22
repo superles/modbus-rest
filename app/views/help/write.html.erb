@@ -1,0 +1,40 @@
+<p class="lead">Coil</p>
+<dl>
+  <dt>Template:</dt>
+  <dd>http://localhost:3000/coil/int/<code>address</code>/<code>value</code>/<code>ip</code>/<code>port</code>/<code>slave id</code></dd>
+  <dt>Example:</dt>
+  <pre>http://localhost:3000/coil/int/22/0/192_168_1_1/502/1</pre>
+  <dt>Constructor:</dt>
+  <pre>http://localhost:3000/input_registers/<%=@conf.coil%>/<%=@conf.coil_addr%>/<%=@conf.coil_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%></pre>
+  <a target="_blank" href="http://localhost:3000/input_registers/<%=@conf.coil%>/<%=@conf.coil_addr%>/<%=@conf.coil_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%>">Click</a>
+</dl>
+<p class="lead">Discrete input</p>
+<dl>
+  <dt>Template:</dt>
+  <dd>http://localhost:3000/discrete_input/int/<code>address</code>/<code>value</code>/<code>ip</code>/<code>port</code>/<code>slave id</code></dd>
+  <dt>Example:</dt>
+  <pre>http://localhost:3000/discrete_input/int/22/0/192_168_1_1/502/1</pre>
+  <dt>Constructor:</dt>
+  <pre>http://localhost:3000/holding_registers/<%=@conf.discrete_input%>/<%=@conf.discrete_input_addr%>/<%=@conf.discrete_input_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%></pre>
+  <a target="_blank" href="http://localhost:3000/input_registers/<%=@conf.discrete_input%>/<%=@conf.discrete_input_addr%>/<%=@conf.discrete_input_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%>">Click</a>
+</dl>
+<p class="lead">Holding registers</p>
+<dl>
+  <dt>Template:</dt>
+  <dd>http://localhost:3000/holding_register/int/<code>address</code>/<code>value</code>/<code>ip</code>/<code>port</code>/<code>slave id</code></dd>
+  <dt>Example:</dt>
+  <pre>http://localhost:3000/holding_register/int/22/1/192_168_1_1/502/1</pre>
+  <dt>Constructor:</dt>
+  <pre>http://localhost:3000/holding_registers/<%=@conf.holding_register%>/<%=@conf.holding_register_addr%>/<%=@conf.holding_register_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%></pre>
+  <a target="_blank" href="http://localhost:3000/input_registers/<%=@conf.holding_register%>/<%=@conf.holding_register_addr%>/<%=@conf.holding_register_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%>">Click</a>
+</dl>
+<p class="lead">Input registers</p>
+<dl>
+  <dt>Template:</dt>
+  <dd>http://localhost:3000/input_registers/float/<code>address</code>/<code>value</code>/<code>ip</code>/<code>port</code>/<code>slave id</code></dd>
+  <dt>Example:</dt>
+  <pre>http://localhost:3000/input_registers/float/7,8/35_5/192_168_1_1/502/1</pre>
+  <dt>Constructor:</dt>
+  <pre>http://localhost:3000/input_registers/<%=@conf.input_register%>/<%=@conf.input_register_addr%>/<%=@conf.input_register_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%></pre>
+  <a target="_blank" href="http://localhost:3000/input_registers/<%=@conf.input_register%>/<%=@conf.input_register_addr%>/<%=@conf.input_register_val%>/<%=@conf.host.gsub(".","_")%>/<%=@conf.port%>/<%=@conf.slave%>">Click</a>
+</dl>

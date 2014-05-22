@@ -1,0 +1,1 @@
+{"host":"192.168.1.1","port":"502","slave":"1","coil":"int","coil_addr":"22","coil_val":"1","discrete_input":"int","discrete_input_addr":"21","discrete_input_val":"1","holding_register":"int","holding_register_addr":"21","holding_register_val":"1","input_register":"float","input_register_addr":"7,8","input_register_val":"38"}

@@ -1,0 +1,19 @@
+<%= form_for @conf, url: {controller:'cfg',action: 'update'} do |f| %>
+
+    <%= f.label :host,'host' %> <%= f.text_field :host %>
+    <%= f.label :port,'port' %> <%= f.text_field :port %>
+    <%= f.label :slave,'slave' %> <%= f.text_field :slave %>
+    <%= f.label :coil,'coil' %> <%= f.text_field :coil %>
+    <%= f.label :coil_addr,'coil_addr' %> <%= f.text_field :coil_addr %>
+    <%= f.label :coil_val,'coil_val' %> <%= f.text_field :coil_val %>
+    <%= f.label :discrete_input,'discrete_input' %> <%= f.text_field :discrete_input %>
+    <%= f.label :discrete_input_addr,'discrete_input_addr' %> <%= f.text_field :discrete_input_addr %>
+    <%= f.label :discrete_input_val,'discrete_input_val' %> <%= f.text_field :discrete_input_val %>
+    <%= f.label :holding_register,'holding_register' %> <%= f.text_field :holding_register %>
+    <%= f.label :holding_register_addr,'holding_register_addr' %> <%= f.text_field :holding_register_addr %>
+    <%= f.label :holding_register_val,'holding_register_val' %> <%= f.text_field :holding_register_val %>
+    <%= f.label :input_register,'input_register' %> <%= f.text_field :input_register %>
+    <%= f.label :input_register_addr,'input_register_addr' %> <%= f.text_field :input_register_addr %>
+    <%= f.label :input_register_val,'input_register_val' %> <%= f.text_field :input_register_val %>
+    <%= f.submit %>
+<% end %>
