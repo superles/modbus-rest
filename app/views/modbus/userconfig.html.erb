@@ -1,5 +1,7 @@
 <%= form_for @conf, url: {controller:'cfg',action: 'update'} do |f| %>
 
+    <%= f.label :resthost,'resthost' %> <%= f.text_field :resthost %>
+    <%= f.label :restport,'restport' %> <%= f.text_field :restport %>
     <%= f.label :host,'host' %> <%= f.text_field :host %>
     <%= f.label :port,'port' %> <%= f.text_field :port %>
     <%= f.label :slave,'slave' %> <%= f.text_field :slave %>

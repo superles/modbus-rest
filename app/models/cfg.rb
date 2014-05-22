@@ -5,6 +5,8 @@ class Cfg
   include ActiveModel::Serializers::JSON
 
   attr_accessor(
+      :resthost,
+      :restport,
       :host,
       :port,
       :slave,
